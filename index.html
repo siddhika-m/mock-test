@@ -11,7 +11,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/style2.css">
 </head>
 
 <body>
@@ -39,17 +40,18 @@
     </div>
   </header>
   <nav>
+
     <div class="navbar">
       <div class="nav-logo">Logo</div>
       <div class="nav-items" id="nav-items">
-        <ul >
+        <ul>
           <li class="hidden"><i class="fa-solid fa-xmark" id="close"></i></li>
           <li><a href="#home">Home <i class="fa-solid fa-angle-down"></i> </a></li>
           <li><a href="#about">About Us </a></li>
-          <li><a href="#Campaign">Campaign<i class="fa-solid fa-angle-down"></i></a></li>
-          <li><a href="#Pages">Pages <i class="fa-solid fa-angle-down"></i></a></li>
-          <li><a href="#Blog">Blog <i class="fa-solid fa-angle-down"></i></a></li>
-          <li><a href="#Contact Us">Contact Us</a></li>
+          <li><a href="#campaign">Campaign<i class="fa-solid fa-angle-down"></i></a></li>
+          <li><a href="#pages">Pages <i class="fa-solid fa-angle-down"></i></a></li>
+          <li><a href="#blog">Blog <i class="fa-solid fa-angle-down"></i></a></li>
+          <li><a href="#contact Us">Contact Us</a></li>
         </ul>
       </div>
       <div class="hidden">
@@ -91,6 +93,65 @@
       </div>
     </div>
   </section>
+
+  <!--Part-2-->
+  <!--Popular Campaign Section-->
+  <section class="popular-campaign" id="campaign">
+    <div class="heading">
+      <h5>DONATE NOW</h5>
+      <h2>Popular Campaign</h2>
+    </div>
+    <!--Slider-->
+    <div class="container slider">
+
+      <!--Slide 1-->
+      <div class="slide">
+        <div class="slide-img">
+          <div class="overlay-2">
+            <h3>Read More</h3>
+          </div>
+          <img src="./images/free-group.png" alt="a free blood group check image">
+        </div>
+        <div class="slide-content">
+          <p class="fflex"><i class="fa-solid fa-calendar-days"></i>
+            13th Feburary, 2022</p>
+          <h3>Free Group Checking</h3>
+          <p>Lorem ipsum dolor sit consectelur adipiscing elit, set do incididunt et dolore magna sit consectelur.</p>
+          <div class="fflex-g">
+            <p class="fflex"><i class="fa-solid fa-clock"></i>10.00 -4.00</p>
+            <p class="fflex"> <i class="fa-solid fa-location-arrow"></i>
+              Broklyn 40, USA</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Slide 2-->
+      <div class="slide">
+        <div class="slide-img">
+          <div class="overlay-2">
+            <h3>Read More</h3>
+          </div>
+          <img src="./images/blood-donation-group.png" alt="a group donating blood image">
+        </div>
+        <div class="slide-content">
+          <p class="fflex"><i class="fa-solid fa-calendar-days"></i>
+            13th Feburary, 2022</p>
+          <h3>Blood Donation Camp</h3>
+          <p>Lorem ipsum dolor sit consectelur adipiscing elit, set do incididunt et dolore magna sit consectelur.</p>
+          <div class="fflex-g">
+            <p class="fflex"><i class="fa-solid fa-clock"></i>10.00 -4.00</p>
+            <p class="fflex"> <i class="fa-solid fa-location-arrow"></i>
+              Broklyn 40, USA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slideButtons" id="slideButtons">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </section>
 </body>
 
 <script>
@@ -98,11 +159,11 @@
   const navItems = document.getElementById("nav-items");
   const close = document.getElementById("close")
 
-  menu.onclick = function(){
+  menu.onclick = function () {
     navItems.style.display = "block";
   }
 
-  close.onclick = function(){
+  close.onclick = function () {
     navItems.style.display = "none";
   }
 </script>

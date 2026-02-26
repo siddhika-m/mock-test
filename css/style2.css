@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+/*Campaign Section*/
+.popular-campaign {
+  margin: 0px auto;
+  background-color: rgb(239, 239, 239);
+  padding: 50px 0px;
+
+}
+
+.container {
+  max-width: 1440px;
+  padding: 60px 0px;
+  margin: 0px auto;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h5 {
+  margin: 30px 0px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #EA062B;
+}
+
+.heading h2 {
+  font-size: 4.5rem;
+  font-weight: 900;
+}
+
+/*Slider*/
+.slider {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.slide {
+  display: flex;
+  background-color: white;
+}
+
+.slide-img {
+  height: 350px;
+  position: relative;
+}
+.overlay-2 {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-2 h3{
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+.slide-img img {
+  height: 350px;
+  width: min-content;
+  object-fit: cover;
+}
+
+.slide-img:hover > .overlay-2{
+  display: flex;
+}
+
+.slide-content {
+  padding: 20px 30px;
+  color: rgb(48, 48, 48);
+}
+
+p {
+  margin: 20px 0px;
+  line-height: 1.6;
+  font-size: 1.15rem;
+}
+
+.slide-content h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.fflex {
+  font-size: 0.9rem;
+  display: flex;
+}
+
+.fflex-g {
+  display: flex;
+  gap: 20px;
+}
+
+.slide-content i {
+  margin-top: 4px;
+  color: #EA062B;
+}
+
+.slideButtons {
+  margin: 30px 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  border: #EA062B 5px solid;
+}
+
+.circle:first-child {
+  border: #EA062B 15px double;
+}
+
+@media screen and (max-width: 700px){
+  .slider{
+    display: block;
+  }
+  
+}

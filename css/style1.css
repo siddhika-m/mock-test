@@ -29,18 +29,19 @@ a {
   align-items: center;
   background-color: black;
   color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .top-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 20px 15px 0px;
+  padding: 5px 0px;
 }
 
 .top-item i {
-  margin-right: 5px;
-  margin-top: 3px;
+ margin-right: 5px;
 }
 
 .top-item :last-child i {
@@ -152,7 +153,8 @@ nav {
 }
 
 h1 {
-  font-size: 6.5rem;
+  width: 19ch;
+  font-size: 6rem;
   font-weight: 900;
   margin: 20px 0px;
 }
@@ -206,16 +208,16 @@ h1 {
 }
 
 /*Responsive Queries*/
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1700px) {
   html {
-  width: max-content;
-  margin: auto;
+    width: max-content;
+    margin: auto;
+  }
 }
-  
-}
+
 @media screen and (max-width: 600px) {
 
-  body{
+  body {
     font-size: 10px;
   }
 
@@ -225,10 +227,10 @@ h1 {
 
   .nav-items {
     display: none;
-    
+
   }
 
-  .nav-items ul{
+  .nav-items ul {
     display: block;
     position: absolute;
     top: 0;
@@ -242,13 +244,16 @@ h1 {
     margin-right: 100px;
     color: #EA062B;
   }
-.h1{
-  font-size: 5rem;
-}
+
+  .h1 {
+    font-size: 5rem;
+  }
+
   .register-flex {
     display: block;
   }
-  #close{
+
+  #close {
     position: absolute;
     right: 30px;
   }
