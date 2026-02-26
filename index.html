@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock Test</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="top-header">
+    <div class="top-item">
+      <i class="fa-solid fa-phone"></i>
+      <p>| +01(977)259912</p>
+    </div>
+    <div class="top-item">
+      <i class="fa-solid fa-envelope"></i>
+      <p>| company@domain.com</p>
+    </div>
+    <div class="top-item">
+      <i class="fa-solid fa-location-dot"></i>
+      <p>| 3146 Koontz Lane, USA</p>
+    </div>
+    <div class="top-item">
+      <p>Follow Now</p>
+      <div class="top-item">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-pinterest"></i>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <div class="navbar">
+      <div class="nav-logo">Logo</div>
+      <div class="nav-items" id="nav-items">
+        <ul >
+          <li class="hidden"><i class="fa-solid fa-xmark" id="close"></i></li>
+          <li><a href="#home">Home <i class="fa-solid fa-angle-down"></i> </a></li>
+          <li><a href="#about">About Us </a></li>
+          <li><a href="#Campaign">Campaign<i class="fa-solid fa-angle-down"></i></a></li>
+          <li><a href="#Pages">Pages <i class="fa-solid fa-angle-down"></i></a></li>
+          <li><a href="#Blog">Blog <i class="fa-solid fa-angle-down"></i></a></li>
+          <li><a href="#Contact Us">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="hidden">
+        <i class="fa-solid fa-bars" id="menu"></i>
+      </div>
+    </div>
+  </nav>
+  <section class="banner-section">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="intro">
+        <i class="fa-brands fa-youtube" style="color: #ea062b;"></i>
+        <p>Intro Video</p>
+      </div>
+      <div class="title">Donate blood,save life !</div>
+      <h1>Donate Blood And Inspires Others.</h1>
+      <button class="btn" id="btn">Explore Now</button>
+    </div>
+  </section>
+  <section class="register-section">
+    <div class="container register-flex">
+      <div class="register flex">
+        <div>
+          <h3>Register Now</h3>
+          <p>Nor again is therre anyone who loves or pursues or desires to obtain pain of itself, because it
+            is pain,</p>
+        </div>
+        <div><i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </div>
+      </div>
+      <div class="register flex">
+        <div>
+          <h3>Donate Now</h3>
+          <p>Nor again is therre anyone who loves or pursues or desires to obtain pain of itself, because it
+            is pain,</p>
+        </div>
+        <div><i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+<script>
+  const menu = document.getElementById("menu");
+  const navItems = document.getElementById("nav-items");
+  const close = document.getElementById("close")
+
+  menu.onclick = function(){
+    navItems.style.display = "block";
+  }
+
+  close.onclick = function(){
+    navItems.style.display = "none";
+  }
+</script>
+
+</html>
