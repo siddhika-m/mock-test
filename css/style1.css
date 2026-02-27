@@ -1,162 +1,166 @@
+/*Reset CSS*/
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/*Elements*/
-
-
+/*Generic*/
 body {
-  font-size: 16px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
 }
 
-ul {
-  list-style-type: none;
-}
-
-a {
+a{
   text-decoration: none;
-  color: black;
+}
+
+ul{
+  list-style: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /*Top Header*/
 .top-header {
-  padding-left: 100px;
+  background: black;
+  color: white;
+  overflow: hidden;
+}
+
+.header-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 600;
 }
 
-.top-item {
+.left-items {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 0px;
+  gap: 200px;
 }
 
-.top-item i {
- margin-right: 5px;
-}
-
-.top-item :last-child i {
-  font-size: 1.5rem;
-}
-
-.top-item:nth-child(4) {
-  background-color: #EA062B;
-  padding: 5px 100px 5px 200px;
-
-}
-
-/*Navbar*/
-nav {
-  background: linear-gradient(to right, #EA062B, white);
-}
-
-.navbar {
-  background-color: white;
+.items {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-left: 100px;
+  gap: 8px;
 }
 
-.nav-logo {
-  background-color: #EA062B;
-  color: white;
-  font-size: 2.6rem;
-  padding: 25px 50px 25px 0px;
-  font-weight: 900;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-items ul {
-  background-color: white;
-  display: flex;
-  align-items: center;
-  font-size: 1.3rem;
-  justify-content: center;
-}
-
-.nav-items li {
-  padding: 30px 20px;
-  font-weight: 600;
-}
-
-.nav-items a:hover {
-  color: #EA062B;
-}
-
-.nav-items li:last-child {
-  margin-right: 100px;
-  background-color: white;
-}
-
-.hidden {
-  display: none;
-}
-
-/*Banner Section*/
-
-.banner-section {
-  background: url(../images/hero-five.jpg) center/cover;
+.right-items {
   position: relative;
+  background: #EA062B;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 12px 25px;
 }
 
-.overlay {
-  z-index: 1;
+.right-items::after {
+  content: "";
   position: absolute;
   top: 0;
-  width: 100%;
+  left: 100%;
+  width: 100vw;
   height: 100%;
-  opacity: 0.1;
-  background-color: white;
+  background: #EA062B;
 }
 
-.container {
-  padding: 60px 100px;
-  width: 150ch;
-  z-index: 2;
-}
-
-.intro {
-
-  display: flex;
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin: 20px 0px;
-}
-
-.intro p {
-  align-items: center;
-  justify-content: center;
-  padding: 24px 10px;
-}
-
-.intro i {
-  font-size: 4.8rem;
+.follow-items{
+  font-size: 2rem;
   padding: 0;
   margin: 0;
 }
 
-.title {
+/*Nav bar*/
+.navbar{
+  background-color: white;
+  color: black;
+  overflow: hidden;
+}
+
+.nav-items{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-logo{
+  position: relative;
+  background: #EA062B;
+  color: white;
+  padding: 30px 60px ;
+  padding-left: 0;
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+
+.nav-logo::before{
+  content: '';
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  background-color: #EA062B;
+}
+
+.nav-tabs, .nav-items a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 700;
+}
+
+.nav-items a{
+  padding: 30px;
+}
+
+.nav-items a:hover{
   color: #EA062B;
-  font-size: 3rem;
+}
+
+/*Hero Section*/
+.hero-section{
+  position: relative;
+  min-height: 600px;
+  padding-bottom: 150px;
+}
+
+.hero-content{
+  z-index: 2;
+  position: relative;
+  padding-top:30px ;
+  width: 50%;
+}
+
+.intro{
+  display: flex;
+  margin: 30px 0px;
+  align-items: center;
+}
+
+.intro p{
+  padding: 15px 10px;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.intro i{
+  font-size: 3.5rem;
+}
+
+.hero-content h2{
+  color: #EA062B;
+  font-size: 2rem;
   font-weight: 600;
 }
 
-h1 {
-  width: 19ch;
-  font-size: 6rem;
+.hero-content h1{
+  font-size: 5rem;
   font-weight: 900;
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 
 .btn {
@@ -168,94 +172,54 @@ h1 {
   border: none;
 }
 
-/*Register Section*/
-.register-flex {
+.hero-image::after{
+  content: '';
+  opacity: 0.5; 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/hero-five.jpg) center/cover;
+  z-index: 0;
+}
+
+/*Register Card*/
+.register-section{
+  position: absolute;
+  bottom: -80px;
+  z-index: 2;
+}
+
+.register-items{
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  justify-content: center;
 }
 
-.register {
-  padding: 30px 40px;
-  width: 100%;
-  color: white;
+.register-card{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: black;
+  color: white;
 }
 
-.register:last-child {
+.register-card:last-child{
   background-color: #EA062B;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.register-content{
+  padding-right: 90px;
 }
 
-.register h3 {
+.register-content h3{
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 30px ;
+}
+
+.register-card i{
   font-size: 2rem;
-  margin: 20px 0px;
-}
-
-.register p {
-  font-size: 1.4rem;
-  width: 50ch;
-}
-
-.register i {
-  font-size: 2.8rem;
-}
-
-/*Responsive Queries*/
-@media screen and (max-width: 1700px) {
-  html {
-    width: max-content;
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 600px) {
-
-  body {
-    font-size: 10px;
-  }
-
-  .top-header {
-    display: none;
-  }
-
-  .nav-items {
-    display: none;
-
-  }
-
-  .nav-items ul {
-    display: block;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-  }
-
-  .hidden {
-    display: block;
-    font-size: 2rem;
-    margin-right: 100px;
-    color: #EA062B;
-  }
-
-  .h1 {
-    font-size: 5rem;
-  }
-
-  .register-flex {
-    display: block;
-  }
-
-  #close {
-    position: absolute;
-    right: 30px;
-  }
-
 }

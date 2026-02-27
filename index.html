@@ -6,46 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mock Test</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!--Font Awesome-->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Font Library-->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style1.css">
-  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/style2.css"> <!--New CSS-->
 </head>
 
 <body>
+  <!--Top Header-->
   <header class="top-header">
-    <div class="top-item">
-      <i class="fa-solid fa-phone"></i>
-      <p>| +01(977)259912</p>
-    </div>
-    <div class="top-item">
-      <i class="fa-solid fa-envelope"></i>
-      <p>| company@domain.com</p>
-    </div>
-    <div class="top-item">
-      <i class="fa-solid fa-location-dot"></i>
-      <p>| 3146 Koontz Lane, USA</p>
-    </div>
-    <div class="top-item">
-      <p>Follow Now</p>
-      <div class="top-item">
-        <i class="fa-brands fa-square-facebook"></i>
-        <i class="fa-brands fa-square-twitter"></i>
-        <i class="fa-brands fa-square-instagram"></i>
-        <i class="fa-brands fa-square-pinterest"></i>
+    <div class="container">
+      <div class="header-items">
+        <div class="left-items">
+          <div class="items">
+            <i class="fa-solid fa-phone"></i>
+            <span>| +01(977)259912</span>
+          </div>
+          <div class="items">
+            <i class="fa-solid fa-envelope"></i>
+            <span>| company@domain.com</span>
+          </div>
+          <div class="items">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>| 3146 Koontz Lane, USA</span>
+          </div>
+        </div>
+        <div class="right-items">
+          <span>Follow Now</span>
+          <div class="follow-items">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-pinterest"></i>
+          </div>
+        </div>
       </div>
     </div>
   </header>
-  <nav>
-
-    <div class="navbar">
-      <div class="nav-logo">Logo</div>
-      <div class="nav-items" id="nav-items">
-        <ul>
-          <li class="hidden"><i class="fa-solid fa-xmark" id="close"></i></li>
+<!--Nav Bar-->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-items">
+        <div class="nav-logo">
+          <h2>Logo</h2>
+        </div>
+        <ul class="nav-tabs">
           <li><a href="#home">Home <i class="fa-solid fa-angle-down"></i> </a></li>
           <li><a href="#about">About Us </a></li>
           <li><a href="#campaign">Campaign<i class="fa-solid fa-angle-down"></i></a></li>
@@ -54,106 +63,108 @@
           <li><a href="#contact Us">Contact Us</a></li>
         </ul>
       </div>
-      <div class="hidden">
-        <i class="fa-solid fa-bars" id="menu"></i>
-      </div>
     </div>
   </nav>
-  <section class="banner-section">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="intro">
-        <i class="fa-brands fa-youtube" style="color: #ea062b;"></i>
-        <p>Intro Video</p>
-      </div>
-      <div class="title">Donate blood,save life !</div>
-      <h1>Donate Blood And Inspires Others.</h1>
-      <button class="btn" id="btn">Explore Now</button>
-    </div>
-  </section>
-  <section class="register-section">
-    <div class="container register-flex">
-      <div class="register flex">
-        <div>
-          <h3>Register Now</h3>
-          <p>Nor again is therre anyone who loves or pursues or desires to obtain pain of itself, because it
-            is pain,</p>
-        </div>
-        <div><i class="fa-solid fa-arrow-right-to-bracket"></i>
-        </div>
-      </div>
-      <div class="register flex">
-        <div>
-          <h3>Donate Now</h3>
-          <p>Nor again is therre anyone who loves or pursues or desires to obtain pain of itself, because it
-            is pain,</p>
-        </div>
-        <div><i class="fa-solid fa-arrow-right-to-bracket"></i>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!--Part-2-->
-  <!--Popular Campaign Section-->
-  <section class="popular-campaign" id="campaign">
-    <div class="heading">
-      <h5>DONATE NOW</h5>
-      <h2>Popular Campaign</h2>
-    </div>
-    <!--Slider-->
-    <div class="container slider">
-
-      <!--Slide 1-->
-      <div class="slide">
-        <div class="slide-img">
-          <div class="overlay-2">
-            <h3>Read More</h3>
+  <main>
+    <!--Hero Banner Section-->
+    <section class="hero-section">
+      <!--Used for adding gradient on background image-->
+      <div class="hero-image"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="intro">
+            <i class="fa-brands fa-youtube" style="color: #ea062b;"></i>
+            <p>Intro Video</p>
           </div>
-          <img src="./images/free-group.png" alt="a free blood group check image">
+          <h2>Donate blood,save life !</h2>
+          <h1>Donate Blood And Inspires Others.</h1>
+          <button class="btn" id="btn">Explore Now</button>
         </div>
-        <div class="slide-content">
-          <p class="fflex"><i class="fa-solid fa-calendar-days"></i>
-            13th Feburary, 2022</p>
-          <h3>Free Group Checking</h3>
-          <p>Lorem ipsum dolor sit consectelur adipiscing elit, set do incididunt et dolore magna sit consectelur.</p>
-          <div class="fflex-g">
-            <p class="fflex"><i class="fa-solid fa-clock"></i>10.00 -4.00</p>
-            <p class="fflex"> <i class="fa-solid fa-location-arrow"></i>
-              Broklyn 40, USA</p>
-          </div>
-        </div>
-      </div>
-
-      <!--Slide 2-->
-      <div class="slide">
-        <div class="slide-img">
-          <div class="overlay-2">
-            <h3>Read More</h3>
-          </div>
-          <img src="./images/blood-donation-group.png" alt="a group donating blood image">
-        </div>
-        <div class="slide-content">
-          <p class="fflex"><i class="fa-solid fa-calendar-days"></i>
-            13th Feburary, 2022</p>
-          <h3>Blood Donation Camp</h3>
-          <p>Lorem ipsum dolor sit consectelur adipiscing elit, set do incididunt et dolore magna sit consectelur.</p>
-          <div class="fflex-g">
-            <p class="fflex"><i class="fa-solid fa-clock"></i>10.00 -4.00</p>
-            <p class="fflex"> <i class="fa-solid fa-location-arrow"></i>
-              Broklyn 40, USA</p>
+<!--Register Card-->
+        <div class="register-section">
+          <div class="container register-items">
+            <div class="register-card">
+              <div class="register-content">
+                <h3>Register Now</h3>
+                <p>Nor again is therre anyone who loves or pursues or desires to obtain pain of itself, because it
+                  is pain,</p>
+              </div>
+              <div class="register-icon">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              </div>
+            </div>
+            <div class="register-card">
+              <div class="register-content">
+                <h3>Donate Now</h3>
+                <p>Nor again is therre anyone who loves or pursues or desires to obtain pain of itself, because it
+                  is pain,</p>
+              </div>
+              <div class="register-icon">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="slideButtons" id="slideButtons">
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-    </div>
-  </section>
+    </section>
+
+
+    <!--Part-2-->
+    <!--Popular Campaign Section-->
+    <section class="popular-campaign" id="campaign">
+      <div class="heading">
+        <h5>DONATE NOW</h5>
+        <h2>Popular Campaign</h2>
+      </div>
+      <!--Slider-->
+      <div class=" container slider">
+
+        <!--Slide 1-->
+        <div class="slide">
+          <div class="slide-img">
+            <img src="./images/free-group.png" alt="a free blood group check image">
+          </div>
+          <div class="slide-content">
+            <p class="fflex"><i class="fa-solid fa-calendar-days"></i>
+              13th Feburary, 2022</p>
+            <h3>Free Group Checking</h3>
+            <p>Lorem ipsum dolor sit consectelur adipiscing elit, set do incididunt et dolore magna sit consectelur.</p>
+            <div class="fflex-g">
+              <p class="fflex"><i class="fa-solid fa-clock"></i>10.00 -4.00</p>
+              <p class="fflex"> <i class="fa-solid fa-location-arrow"></i>
+                Broklyn 40, USA</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Slide 2-->
+        <div class="slide">
+          <div class="slide-img">
+            <img src="./images/blood-donation-group.png" alt="a group donating blood image">
+          </div>
+          <div class="slide-content">
+            <p class="fflex"><i class="fa-solid fa-calendar-days"></i>
+              13th Feburary, 2022</p>
+            <h3>Blood Donation Camp</h3>
+            <p>Lorem ipsum dolor sit consectelur adipiscing elit, set do incididunt et dolore magna sit consectelur.</p>
+            <div class="fflex-g">
+              <p class="fflex"><i class="fa-solid fa-clock"></i>10.00 -4.00</p>
+              <p class="fflex"> <i class="fa-solid fa-location-arrow"></i>
+                Broklyn 40, USA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slideButtons" id="slideButtons">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </section>
+
+  </main>
 </body>
-
 <script>
   const menu = document.getElementById("menu");
   const navItems = document.getElementById("nav-items");
